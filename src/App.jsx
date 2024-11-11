@@ -7,14 +7,14 @@ import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
 import About from "./component/About";
 import Contact from "./component/Contact";
-import { HashRouter as Router } from "react-router-dom"; // Import HashRouter
+import { BrowserRouter as Router } from "react-router-dom";  // Switch to BrowserRouter
 
 function App() {
   const [authUser, setAuthUser] = useAuth();
   console.log(authUser);
 
   return (
-    <Router> {/* Wrap Routes inside HashRouter */}
+    <Router> {/* Use BrowserRouter instead of HashRouter */}
       <div className="dark:bg-slate-900 dark:text-white">
         <Routes>
           <Route path="/" element={<Home />} />
