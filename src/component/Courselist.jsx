@@ -29,13 +29,7 @@ function Courselist() {
             <span className="text-purple-500"> Here! :)</span>
           </h1>
           <p className="mt-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-            assumenda? Repellendus, iste corrupti? Tempore laudantium
-            repellendus accusamus accusantium sed architecto odio, nisi expedita
-            quas quidem nesciunt debitis dolore non aspernatur praesentium
-            assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-            animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-            consequatur!
+           Whether you're an avid reader or just starting your reading journey, we have something for everyone. From insightful free books to premium paid options, our collection is designed to help you expand your knowledge, enhance your skills, and fuel your curiosity.
           </p>
           <Link to="/">
             <button className="mt-6 bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
