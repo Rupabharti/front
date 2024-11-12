@@ -49,7 +49,7 @@ function Footer() {
     </div>
   </nav>
   <aside>
-    <p>Mearn  project {new Date().getFullYear()} - Rupa bharti</p>
+    <p>MERN  project {new Date().getFullYear()} - Rupa bharti</p>
   </aside>
   
 </footer>
