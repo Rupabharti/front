@@ -16,9 +16,7 @@ function Banner() {
               Hello, welcome here to learn something <span className='text-purple-500'>new everyday !!</span>
             </h1>
             <p className='mt-4 text-xl text-bold'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+             We are passionate about bringing the joy of reading to everyone. Whether you are looking for the latest bestseller, a classic novel, or something off the beaten path, we have something for every reader.
             </p>
           </div>
           <label className="input input-bordered flex items-center gap-4 mt-6">
