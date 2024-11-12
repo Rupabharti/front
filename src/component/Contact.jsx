@@ -7,6 +7,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  const [statusMessage, setStatusMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,8 +19,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic, e.g., send formData to the server
-    console.log('Form submitted:', formData);
+
+    // Create the mailto link
+    const mailtoLink = `mailto:rupabharti689@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`)}`;
+
+    // Open the default email client with the pre-filled email
+    window.location.href = mailtoLink;
+
+    // Reset form data after submission
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+
+    // Show a status message
+    setStatusMessage('Your message is being sent...');
   };
 
   return (
@@ -78,6 +94,11 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        {/* Status message */}
+        {statusMessage && (
+          <p className="mt-4 text-center text-green-500">{statusMessage}</p>
+        )}
       </div>
     </div>
   );
